@@ -303,3 +303,112 @@ html {
         padding-right: 10px;
     }
 }
+
+/* Social button */
+.social {
+    padding-top: 10px;
+}
+
+.social a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: crimson;
+}
+
+/* CV for graduate student */
+.cv {
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.cv h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: left;
+    color: royalblue;
+
+    padding-bottom: 3px;
+}
+
+.cv span {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    line-height: 30px;
+}
+
+/* CV-Education */
+.cv .education {
+    padding-bottom: 10px;
+}
+
+.area-divider-education {
+    display: block;
+    width: 120px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+.cv .degree {
+    margin-bottom: 20px;
+    /* margin-left: 30px; */
+}
+
+/* CV-Publications */
+.cv .publication {
+    padding-bottom: 20px;
+}
+
+.area-divider-publication {
+    display: block;
+    width: 133px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+.cv .pub_number {
+    float: left;
+}
+
+.cv .pub_info {
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+/* CV-Patent */
+.area-divider-patent {
+    display: block;
+    width: 80px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+/* CV-Research Projects */
+.cv .research_project {
+    padding-bottom: 20px;
+}
+
+.area-divider-research_project {
+    display: block;
+    width: 198px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 211, 211);
+}
+
+/* CV-Activities */
+.area-divider-activity {
+    display: block;
+    width: 90px;
+    height: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(211, 211, 211);
+}
