@@ -3,8 +3,7 @@ const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
 //!
-var menuItems = [].slice.call(document.querySelectorAll('.menu__item')),
-    menuSubs = [].slice.call(document.querySelectorAll('.dropdown-menu')),
+var menuSubs = [].slice.call(document.querySelectorAll('.dropdown-menu')),
     selectedMenu = undefined,
     subBg = document.querySelector('.dropdown__bg'),
     subBgBtm = document.querySelector('.dropdown__bg-bottom'),
@@ -27,8 +26,6 @@ var menuItems = [].slice.call(document.querySelectorAll('.menu__item')),
         var subMeta = menuSubCnt.getBoundingClientRect();
 
         selectedMenu = menuId;
-
-        menuItems.forEach(el => el.classList.remove('active'));
 
         el.classList.add('active');
 
@@ -54,7 +51,6 @@ var menuItems = [].slice.call(document.querySelectorAll('.menu__item')),
         header.classList.add('dropdown-active');
     },
     closeDropdown = function () {
-        menuItems.forEach(el => el.classList.remove('active'));
         menuSubs.forEach(el => {
             el.classList.remove('active');
             el.style.opacity = 0;
@@ -66,15 +62,15 @@ var menuItems = [].slice.call(document.querySelectorAll('.menu__item')),
         header.classList.remove('dropdown-active');
     };
 
-menuItems.forEach(el => {
+// menuItems.forEach(el => {
 
-    el.addEventListener('mouseenter', function () {
-    stopCloseTimeout();
-    openDropdown(this);
-}, false);
+//     el.addEventListener('mouseenter', function () {
+//     stopCloseTimeout();
+//     openDropdown(this);
+// }, false);
 
-    el.addEventListener('mouseleave', () => startCloseTimeout(), false);
-});
+//     el.addEventListener('mouseleave', () => startCloseTimeout(), false);
+// });
 
 menuSubs.forEach(el => {
     el.addEventListener('mouseenter', () => stopCloseTimeout(), false);
