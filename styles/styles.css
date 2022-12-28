@@ -322,7 +322,8 @@ html {
         padding-bottom: 20px;
     }
 }
-/* */
+
+/*! */
 .dropdown-holder {
     position: absolute;
     width: 100%;
@@ -394,10 +395,4 @@ html {
 .dropdown-menu.active .dropdown-menu__content {
     opacity: 1;
 }
-
-.col-2 {
-    display: flex;
-}
-.col-2 > ul, .col-2 > div {
-    flex: 1 0 150px;
-}
+/*! */
