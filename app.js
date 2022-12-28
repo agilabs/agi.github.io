@@ -3,14 +3,6 @@ const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
 //!
-// const menuItems = [].slice.call(document.querySelectorAll('.menu__item'));
-// const menuSubs = [].slice.call(document.querySelectorAll('.dropdown-menu'));
-// const selectedMenu = undefined;
-// const subBg = document.querySelector('.dropdown__bg');
-// const subBgBtm = document.querySelector('.dropdown__bg-bottom');
-// const subArr = document.querySelector('.dropdown__arrow');
-// const subCnt = document.querySelector('.dropdown__wrap');
-// const header = document.querySelector('.main-header');
 var menuItems = [].slice.call(document.querySelectorAll('.menu__item')),
     menuSubs = [].slice.call(document.querySelectorAll('.dropdown-menu')),
     selectedMenu = undefined,
