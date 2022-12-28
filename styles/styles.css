@@ -324,6 +324,10 @@ html {
 }
 
 /*! */
+
+.menu__item {
+    position: relative;
+}
 .dropdown-holder {
     position: absolute;
     width: 100%;
