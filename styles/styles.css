@@ -76,10 +76,10 @@ nav {
 .nav-links > li > a {
     display: block;
     padding: 0 15px;
-    background: #333;
+    background: white;
     height: 40px;
     line-height: 40px;
-    color: #fff;
+    color: black;
 }
 .nav-links > li:hover .depth_1 {
     display: block;
