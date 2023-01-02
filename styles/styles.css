@@ -61,6 +61,14 @@ nav {
 
 /*!*/
 
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
 .nav-links:after {
     display: block;
     content: "";
@@ -81,7 +89,7 @@ nav {
     line-height: 40px;
     color: black;
 }
-.nav-links > li:hover .depth_1 {
+.nav-links > li:hover .Style1 {
     display: block;
 }
 .nav-links .Style1 {
