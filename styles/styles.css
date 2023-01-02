@@ -60,7 +60,7 @@ nav {
 }
 
 /*!*/
-/* .nav-links:after {
+.nav-links:after {
     display: block;
     content: "";
     clear: both;
@@ -95,7 +95,7 @@ nav {
     padding: 5px;
     background: #666;
     color: #fff;
-} */
+}
 
 /*!*/
 
