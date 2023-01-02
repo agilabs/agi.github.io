@@ -108,6 +108,7 @@ a {
     margin: 0 auto;
     width: 140px;
     display: flex;
+    box-shadow: 3px 3px 3px gray;
 }
 
 /*!*/
