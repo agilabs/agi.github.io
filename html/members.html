@@ -15,48 +15,51 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../images/logo.png" class="img-logo">
-      </a>
-    </div>
-    <ul class="nav-links"> <!-- ul: unordered list -->
-      <li><a href="../index.html">Home</a></li>
-      <li>
-        <a class="current" href="members.html">Members</a>
-        <ul class="Style1">
-          <li><a href="members.html#professor">Professor</a></li>
-          <li><a href="members.html#grad">Students</a></li>
-          <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
-          <li><a href="members.html#advisor">Research Advisor</a></li>
-        </ul>      
-      </li>
-      <li>
-        <a href="publications.html">Publications</a>
-        <ul class="Style1">
-          <li><a href="publications.html#journals">Journals</a></li>
-          <li><a href="publications.html#conferences">Conferences</a></li>
-          <li><a href="publications.html#patents">Patents</a></li>
-        </ul>
-      </li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
-
-  <script src="../app.js"></script>
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo.png" class="img-logo">
+        </a>
+      </div>
+      <ul class="nav-links"> <!-- ul: unordered list -->
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a class="current" href="members.html">Members</a>
+          <ul class="Style1">
+            <li><a href="members.html#section1">Professor</a></li>
+            <li><a href="members.html#section2">Students</a></li>
+            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
+            <li><a href="members.html#section4">Research Advisor</a></li>
+          </ul>      
+        </li>
+        <li>
+          <a href="publications.html">Publications</a>
+          <ul class="Style1">
+            <li><a href="publications.html#section1">Journals</a></li>
+            <li><a href="publications.html#section2">Conferences</a></li>
+            <li><a href="publications.html#section3">Patents</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  
+    <script src="../app.js"></script>
+  </header>
 
   <div class="banner-area">
     <h1><span>MEMBERS</span></h1> <!-- span: shadow effect -->
   </div>
   
   <section class="members-area" id="members">
+    <span class="anchor" id="section1"></span>
     <div class="area-main">
       <a name="professor"></a>
       <div class="area-divider-top"></div>
@@ -81,7 +84,7 @@
       </div>
 
     </div> <!-- Professor-end -->
-
+    <span class="anchor" id="section2"></span>
     <div class="area-main">
       <a name="grad"></a>
       <div class="area-divider-top"></div>
@@ -126,14 +129,74 @@
               <h2>Jiwon Hwang (황지원)</h2>
               <p>
                 <span>M.S. student at KHU CS.</span>
-                <span><b>Email: </b><a href="tdj03204@khu.ac.kr"><u>tdj03204@khu.ac.kr</u></a></span>
+                <span><b>Email: </b><a href="mailto:tdj03204@khu.ac.kr"><u>tdj03204@khu.ac.kr</u></a></span>
                 <span><a href="members/members_jwhwang.html"><u>Personal Site</u></a></span>
                 <span>(Fall 2022)</span>
               </p>
             </div>
           </div>
         </center>
-  
+
+        <center>
+          <div class="member_column">
+            <div class="desc">
+              <div class="pics" style="background-image: url('../images/members/jhlee.jpg');"></div>
+              <h2>Jae-Ho Lee (이재호)</h2>
+              <p>
+                <span>M.S. student at KHU AI.</span>
+                <span><b>Email: </b><a href="mailto:dlwogh9344@khu.ac.kr"><u>dlwogh9344@khu.ac.kr</u></a></span>
+                <span><a href="members/members_jhlee.html"><u>Personal Site</u></a></span>
+                <span>(Spring 2023)</span>
+              </p>
+            </div>
+          </div>
+        </center>
+
+        <center>
+          <div class="member_column">
+            <div class="desc">
+              <div class="pics" style="background-image: url('../images/members/jwseo.jpg');"></div>
+              <h2>Juwon Seo (서주원)</h2>
+              <p>
+                <span>M.S. student at KHU AI.</span>
+                <span><b>Email: </b><a href="mailto:jwseo001@khu.ac.kr"><u>jwseo001@khu.ac.kr</u></a></span>
+                <span><a href="members/members_jwseo.html"><u>Personal Site</u></a></span>
+                <span>(Spring 2023)</span>
+              </p>
+            </div>
+          </div>
+        </center>
+
+        <center>
+          <div class="member_column">
+            <div class="desc">
+              <div class="pics" style="background-image: url('../images/members/sachoe.jpg');"></div>
+              <h2>Seun-An Choe (최선안)</h2>
+              <p>
+                <span>M.S. student at KHU AI.</span>
+                <span><b>Email: </b><a href="mailto:dragoon0905@khu.ac.kr"><u>dragoon0905@khu.ac.kr</u></a></span>
+                <span><a href="members/members_sachoe.html"><u>Personal Site</u></a></span>
+                <span>(Spring 2023)</span>
+              </p>
+            </div>
+          </div>
+        </center>
+
+        <center>
+          <div class="member_column">
+            <div class="desc">
+              <div class="pics" style="background-image: url('../images/members/jymoon.jpg');"></div>
+              <h2>Jun-Yeong Moon (문준영)</h2>
+              <p>
+                <span>M.S.-Ph.D. student at KHU AI.</span>
+                <span><b>Email: </b><a href="mailto:moonjunyyy@khu.ac.kr"><u>moonjunyyy@khu.ac.kr</u></a></span>
+                <span><a href="members/members_jymoon.html"><u>Personal Site</u></a></span>
+                <span>(Spring 2023)</span>
+              </p>
+            </div>
+          </div>
+        </center>
+
         </div>
 
         <!-- <div class="member_column">
@@ -172,7 +235,7 @@
 
     </div> Alumni-end -->
 
-
+    <span class="anchor" id="section3"></span>
     <div class="area-main">
       <a name="undergrad"></a>
       <div class="area-divider-top"></div>
@@ -180,7 +243,7 @@
       <div class="area-divider-bottom"></div>
 
       <div class="member">
-        <center>
+        <!-- <center>
         <div class="member_column">
           <div class="desc">
             <div class="pics" style="background-image: url('../images/members/jhlee.jpg');"></div>
@@ -192,7 +255,7 @@
             </p>
           </div>
         </div>
-      </center>
+      </center> -->
 
 
       <center>
@@ -209,8 +272,7 @@
         </div>
       </center>
 
-
-      <center>
+      <!-- <center>
         <div class="member_column">
           <div class="desc">
             <div class="pics" style="background-image: url('../images/members/jwseo.jpg');"></div>
@@ -222,10 +284,9 @@
             </p>
           </div>
         </div>
-      </center>
+      </center> -->
 
-
-      <center>
+      <!-- <center>
         <div class="member_column">
           <div class="desc">
             <div class="pics" style="background-image: url('../images/members/sachoe.jpg');"></div>
@@ -237,7 +298,7 @@
             </p>
           </div>
         </div>
-      </center>
+      </center> -->
 
       <center>
         <div class="member_column">
@@ -246,14 +307,14 @@
             <h2>Min-Yeong Park (박민영)</h2>
             <p>
               <span>UG student at KHU CS.</span>
-              <span><b>Email: </b><a href="pmy0792@khu.ac.kr"><u>pmy0792@khu.ac.kr</u></a></span>
+              <span><b>Email: </b><a href="mailto:pmy0792@khu.ac.kr"><u>pmy0792@khu.ac.kr</u></a></span>
               <span>(Fall 2022)</span>
             </p>
           </div>
         </div>
       </center>
 
-      <center>
+      <!-- <center>
         <div class="member_column">
           <div class="desc">
             <div class="pics" style="background-image: url('../images/members/jymoon.jpg');"></div>
@@ -265,7 +326,7 @@
             </p>
           </div>
         </div>
-      </center>
+      </center> -->
 
       <center>
         <div class="member_column">
@@ -274,7 +335,7 @@
             <h2>Do-Hyeong Kim (김도형)</h2>
             <p>
               <span>UG student at KHU EE.</span>
-              <span><b>Email: </b><a href="don1996@khu.ac.kr"><u>don1996@khu.ac.kr</u></a></span>
+              <span><b>Email: </b><a href="mailto:don1996@khu.ac.kr"><u>don1996@khu.ac.kr</u></a></span>
               <span>(Fall 2022)</span>
             </p>
           </div>
@@ -288,8 +349,22 @@
             <h2>Minki Kim (김민기)</h2>
             <p>
               <span>UG student at KHU CS.</span>
-              <span><b>Email: </b><a href="rlaalsrl0922@khu.ac.kr"><u>rlaalsrl0922@khu.ac.kr</u></a></span>
+              <span><b>Email: </b><a href="mailto:rlaalsrl0922@khu.ac.kr"><u>rlaalsrl0922@khu.ac.kr</u></a></span>
               <span>(Fall 2022)</span>
+            </p>
+          </div>
+        </div>
+      </center>
+
+      <center>
+        <div class="member_column">
+          <div class="desc">
+            <div class="pics" style="background-image: url('../images/members/mjkim.jpeg');"></div>
+            <h2>Min-Jae Kim (김민재)</h2>
+            <p>
+              <span>UG student at KHU CS.</span>
+              <span><b>Email: </b><a href="mailto:alswo9912@khu.ac.kr"><u>alswo9912@khu.ac.kr</u></a></span>
+              <span>(Spring 2023)</span>
             </p>
           </div>
         </div>
@@ -303,7 +378,7 @@
     </div> <!-- Undergraduate Student-end -->
 
 
-
+    <span class="anchor" id="section4"></span>
     <div class="area-main">
       <a name="advisor"></a>
       <div class="area-divider-top"></div>

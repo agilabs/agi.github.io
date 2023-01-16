@@ -15,28 +15,43 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <a class="navbar-brand" href="../../index.html">
-        <img src="../../images/logo.png" class="img-logo">
-      </a>
-    </div>
-    <ul class="nav-links"> <!-- ul: unordered list -->
-      <li><a href="../../index.html">Home</a></li>
-      <li><a class="current" href="../members.html">Members</a></li>
-      <li><a href="../publications.html">Publications</a></li>
-      <li><a href="../courses.html">Courses</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
-
-  <script src="../../app.js"></script>
-
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../images/logo.png" class="img-logo">
+        </a>
+      </div>
+      <ul class="nav-links"> <!-- ul: unordered list -->
+        <li><a href="../../index.html">Home</a></li>
+        <li>
+          <a class="current" href="../members.html">Members</a>
+          <ul class="Style1">
+            <li><a href="../members.html#section1">Professor</a></li>
+            <li><a href="../members.html#section2">Students</a></li>
+            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
+            <li><a href="../members.html#section4">Research Advisor</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../publications.html">Publications</a>
+          <ul class="Style1">
+            <li><a href="../publications.html#section1">Journals</a></li>
+            <li><a href="../publications.html#section2">Conferences</a></li>
+            <li><a href="../publications.html#section3">Patents</a></li>
+          </ul>
+        </li>
+        <li><a href="../courses.html">Courses</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <script src="../../app.js"></script>
+  </header>
   <div class="banner-area">
     <h1><span>MEMBERS</span></h1> <!-- span: shadow effect -->
   </div>
@@ -54,18 +69,18 @@
         <div class="prof">
           <h2>Jiwon Hwang (황지원)</h2>
           <p>
-            <span><b>M.S. candidate</b> at Computer Science and Engineering, Kyung Hee University</span>
+            <span><b>M.S. student</b>, Computer Science and Engineering, Kyung Hee University</span>
             <span><b>Email: </b><a href="mailto:tdj03204@khu.ac.kr"><u>tdj03204@khu.ac.kr</u></a></span>
             <span><b>Room: </b>#316, College of Electronics Information</span>
             <span><b>Research interests: </b>Incremental learning and continual learning.</span>
           </p>
 
           <ul class="social">
-            <a href="resources/CV_gmpark.pdf"><i class="fa fa-download"></i>&nbsp <b>C.V.&nbsp&nbsp</b></a>
+            <a href=#><i class="fa fa-download"></i>&nbsp <b>C.V.&nbsp&nbsp</b></a>
             <!-- <a href="resources/CV_gmpark.pdf" class="about-cv">&nbsp C.V.</a> -->
             <!-- <a href="https://www.facebook.com/yowoou"><i class="fa fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/yowoou"><i class="fa fa-linkedin"></i></a> -->
-            <a href="https://scholar.google.com/citations?user=Sz6rfOMAAAAJ&hl=en" class="about-google-scholar"><i
+            <a href=# class="about-google-scholar"><i
                 class="ai ai-google-scholar"></i>&nbsp&nbsp</a>
             <a href="https://github.com/KMileStone" class="about-github"><i class="fa fa-github"></i></a>
           </ul>
@@ -80,7 +95,7 @@
 
         <div class="degree">
           <span><b>Kyung Hee University</b>, Yongin, Republic of Korea</span>
-          <span>M.S. candidate in Computer Science and Engineering</span>
+          <span>M.S. student in Computer Science and Engineering</span>
           <span>Advisor: Prof. Gyeong-Moon Park</span>
         </div>
 

@@ -15,48 +15,50 @@
 </head>
 
 <body>
-  <nav>
-    <div class="logo">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../images/logo.png" class="img-logo">
-      </a>
-    </div>
-    <ul class="nav-links"> <!-- ul: unordered list -->
-      <li><a href="../index.html">Home</a></li>
-      <li>
-        <a href="members.html">Members</a>
-        <ul class="Style1">
-          <li><a href="members.html#professor">Professor</a></li>
-          <li><a href="members.html#grad">Students</a></li>
-          <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
-          <li><a href="members.html#advisor">Research Advisor</a></li>
-        </ul>
-      </li>
-      <li>
-        <a class="current" href="publications.html">Publications</a>
-        <ul class="Style1">
-          <li><a href="publications.html#journals">Journals</a></li>
-          <li><a href="publications.html#conferences">Conferences</a></li>
-          <li><a href="publications.html#patents">Patents</a></li>
-        </ul>
-      </li>
-      <li><a href="courses.html">Courses</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </nav>
+  <header>
+    <nav>
+      <div class="logo">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo.png" class="img-logo">
+        </a>
+      </div>
+      <ul class="nav-links"> <!-- ul: unordered list -->
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="members.html">Members</a>
+          <ul class="Style1">
+            <li><a href="members.html#section1">Professor</a></li>
+            <li><a href="members.html#section2">Students</a></li>
+            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
+            <li><a href="members.html#section4">Research Advisor</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="current" href="publications.html">Publications</a>
+          <ul class="Style1">
+            <li><a href="publications.html#section1">Journals</a></li>
+            <li><a href="publications.html#section2">Conferences</a></li>
+            <li><a href="publications.html#section3">Patents</a></li>
+          </ul>
+        </li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
 
-  <script src="../app.js"></script>
-
+    <script src="../app.js"></script>
+  </header>
   <div class="banner-area">
     <h1><span>PUBLICATIONS</span></h1> <!-- span: shadow effect -->
   </div>
   
   <section class="publications-area" id="publications">
+    <span class="anchor" id="section1"></span>
     <div class="area-main">
       <div class="area-divider-top"></div>
       <div class="area-name">Journal Papers</div>
@@ -142,6 +144,7 @@
 
     </div> <!-- area-main -->
 
+    <span class="anchor" id="section2"></span>
     <div class="area-main">
       <div class="area-divider-top"></div>
       <div class="area-name">International Conference Papers</div>
@@ -263,11 +266,54 @@
     </div> <!-- area-main -->
 
 
-
     <div class="area-main">
       <div class="area-divider-top"></div>
       <div class="area-name">Domestic Conference Papers</div>
       <div class="area-divider-bottom"></div>
+
+      <div class="numbering">
+        <p class="info">[14]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>Seun-An Choe and <u><b>G.-M. Park</b></u></span>
+            <span>"Confidence-Score based Pixelwise MixUp for Unsupervised Domain Adaptation"</span>
+            <span><i><b>Korea Software Congress (KSC)</b></i>, Jeju Island, Republic of Korea, Dec. 2022.</span>
+          </p>
+      </div>
+
+      <div class="numbering">
+        <p class="info">[13]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>Jaeho Lee and <u><b>G.-M. Park</b></u></span>
+            <span>"Prompt Based Incremental Learning Using Attention Diversity"</span>
+            <span><i><b>Korea Software Congress (KSC)</b></i>, Jeju Island, Republic of Korea, Dec. 2022.</span>
+          </p>
+      </div>
+
+      <div class="numbering">
+        <p class="info">[12]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>Juwon Seo and <u><b>G.-M. Park</b></u></span>
+            <span>"Few-Shot Image Generation via Learning Disentangled Feature"</span>
+            <span><i><b>Korea Software Congress (KSC)</b></i>, Jeju Island, Republic of Korea, Dec. 2022.</span>
+          </p>
+      </div>
+
+      <div class="numbering">
+        <p class="info">[11]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>Min-Yeong Park, Keon-Hee Park, and <u><b>G.-M. Park</b></u></span>
+            <span>“Dynamic and Assistant Prompts for Class Incremental Learning”</span>
+            <span><i><b>Korea Software Congress (KSC)</b></i>, Jeju Island, Republic of Korea, Dec. 2022.</span>
+          </p>
+      </div>
 
       <div class="numbering">
         <p class="info">[10]</p>
@@ -382,9 +428,7 @@
 
     </div> <!-- area-main -->
 
-
-
-
+    <span class="anchor" id="section3"></span>
     <div class="area-main">
       <div class="area-divider-top"></div>
       <div class="area-name">Patents</div>
@@ -392,13 +436,35 @@
       <div class="area-divider-bottom"></div>
 
       <div class="numbering">
+        <p class="info">[5]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>Ahyung Shin and <u><b>G.-M. Park</b></u></span>
+            <span>"Method for Detecting Anomaly in Time Series Data and Computing Device for Executing the Method"</span>
+            <span><i><b>Patent Application (10-2021-0175107)</b></i>, Aug. 1, 2022.</span>
+          </p>
+      </div>
+
+      <div class="numbering">
+        <p class="info">[4]</p>
+      </div>
+      <div class="each-con">
+          <p class="info">
+            <span>H.-W. Kim, J.-G. Park, H.-J. Song, B.-H. Yoo, E.-S. Chung, R. Han, and <u><b>G.-M. Park</b></u></span>
+            <span>"System and Method for Adaptive Masking and Non-Directional Language Understanding and Generation"</span>
+            <span><i><b>Patent Application (10-2020-0168645)</b></i>, Dec. 4, 2020.</span>
+          </p>
+      </div>
+
+      <div class="numbering">
         <p class="info">[3]</p>
       </div>
       <div class="each-con">
           <p class="info">
-            <span>H.-W. Kim, J.-G. Park, H.-J. Song, E.-S. Chung, R. Han, and <u><b>G.-M. Park</b></u></span>
-            <span>"Method and Apparatus for Online Bayesian Few-shot Learning"</span>
-            <span><i><b>Patent Application (10-2020-0075025)</b></i></span>
+            <span>E.-S. Chung, H.-W. Kim, J.-G. Park, H.-J. Song, B.-H. Yoo, R. Han, and <u><b>G.-M. Park</b></u></span>
+            <span>"Device and Method for Learning Natural Language Processing Comprising External Memory Network"</span>
+            <span><i><b>Patent Application (10-2020-0141061)</b></i>, Oct. 28, 2020.</span>
           </p>
       </div>
 
@@ -407,9 +473,9 @@
       </div>
       <div class="each-con">
           <p class="info">
-            <span>Ahyung Shin and <u><b>G.-M. Park</b></u></span>
-            <span>"Method for Detecting Anomaly in Time Series Data and Computing Device for Executing the Method"</span>
-            <span><i><b>Patent Application (10-2021-0175107)</b></i></span>
+            <span>H.-W. Kim, J.-G. Park, H.-J. Song, E.-S. Chung, R. Han, and <u><b>G.-M. Park</b></u></span>
+            <span>"Method and Apparatus for Online Bayesian Few-shot Learning"</span>
+            <span><i><b>Patent Application (10-2020-0075025)</b></i>, Jun. 19, 2020.</span>
           </p>
       </div>
 
@@ -420,7 +486,7 @@
           <p class="info">
             <span>B.-S. Song, G.-B. Park, and <u><b>G.-M. Park</b></u></span>
             <span>"A Light Emitting Diode Containing a Double-Layered Photonic Crystal Structure"</span>
-            <span><i><b>Korean Patent Registration (10-1529817)</b></i></span>
+            <span><i><b>Korean Patent Registration (10-1529817)</b></i>, Feb. 25, 2014.</span>
           </p>
       </div>
 

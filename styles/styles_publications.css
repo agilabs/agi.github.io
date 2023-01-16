@@ -19,7 +19,16 @@ nav {
     height: 60px;
     z-index: 1;
 }
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
+body{
+    padding-top: 60px;
+}
 .logo {
     margin-right: auto;
     cursor: pointer;
@@ -89,26 +98,36 @@ a {
     text-align: center;
 }
 .nav-links > li:hover .Style1 {
-    display: block;
+    max-height: 200px;
 }
+
 .nav-links .Style1 {
-    display: none;
-    position: absolute;
-    left: 0;
+    left: 0%;
     right: 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    width: 200px;
+    list-style: none;
+    line-height: 2em;
+    overflow: hidden;
+    max-height:0;
+    transition: max-height 0.15s ease-in; 
+
 }
+
 .nav-links .Style1 a {
     display: inline-block;
-    padding: 10px;
+    padding: 7px;
     background: white;
     color: black;
     text-align: center;
     margin: 0 auto;
-    width: 150px;
+    width: 300px;
     display: flex;
-    box-shadow: 3px 3px 3px gray;
+    /* box-shadow: 3px 3px 3px gray; */
+
 }
 
 /*!*/
@@ -230,7 +249,7 @@ html {
     color: royalblue;
     text-align: center;
     
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
 .banner-area h1 span{
@@ -238,7 +257,12 @@ html {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 0px 10px 0px 10px;
 }
-
+.anchor {
+    display: block;
+    height: 30px; /*same height as header*/
+    margin-top: -30px; /*same height as header*/
+    visibility: hidden;
+}
 /* Publication Styles */
 .area-main {
     margin-left: 10%;
