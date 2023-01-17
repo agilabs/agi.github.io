@@ -103,34 +103,41 @@ a {
 }
 
 .nav-links .Style1 {
-    left: 0%;
-    right: 0;
-    text-align: center;
     font-size: 16px;
     display: block;
     position: absolute;
-    width: 200px;
     list-style: none;
     line-height: 2em;
     overflow: hidden;
     max-height:0;
-    transition: max-height 0.15s ease-in; 
+    padding-top: 7px;
+    transition: max-height 0.15s ease-in;
+    right: 0%;
+    text-align: center;
 
 }
 
 .nav-links .Style1 a {
     display: inline-block;
-    padding: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background: white;
     color: black;
     text-align: center;
     margin: 0 auto;
-    width: 300px;
-    display: flex;
+    width: 100%;
     /* box-shadow: 3px 3px 3px gray; */
 
 }
 
+.nav-links .Style1 li {
+    padding: 0px 0px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
 /*!*/
 
 .burger {
@@ -173,6 +180,9 @@ a {
     }
     .burger {
         display: block;
+    }
+    .nav-links .Style1 {
+        display: none;
     }
 }
 
