@@ -117,13 +117,14 @@ a {
 
 .nav-links .Style1 a {
     display: inline-block;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background: white;
     color: black;
     text-align: center;
     margin: 0 auto;
     width: 100%;
+    line-height: 160%;
     /* display: flex; */
     /* box-shadow: 3px 3px 3px gray; */
 
