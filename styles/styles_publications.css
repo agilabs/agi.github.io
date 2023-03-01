@@ -174,6 +174,7 @@ a {
 .area-btn .current {
     padding: 12px 25px;
     /* background: rgb(20, 73, 220); */
+    display: inline-block;
     background: rgb(118, 143, 211);
     border-radius: 30px;
     text-transform: uppercase;
@@ -222,11 +223,11 @@ a {
         display: none;
     }
     .about-btn {
-        padding: 10px 10px;
+        padding: 8px 8px;
         display: inline-block;
         /* background: rgb(20, 73, 220); */
         background: gray;
-        border-radius: 50px;
+        border-radius: 20px;
         text-transform: uppercase;
         /* letter-spacing: 1px; */
         color: #fff;
@@ -246,6 +247,18 @@ a {
         height: 35px; 
         margin-top: -44px; 
         visibility: hidden;
+    }
+
+    .area-btn .current {
+        padding: 8px 8px;
+        /* background: rgb(20, 73, 220); */
+        display: inline-block;
+        background: rgb(118, 143, 211);
+        border-radius: 20px;
+        text-transform: uppercase;
+        /* letter-spacing: 1px; */
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
     }
 }
 
