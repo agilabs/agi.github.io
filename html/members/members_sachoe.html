@@ -15,11 +15,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header id="header">
+    <nav class="welcome">
       <div class="logo">
         <a class="navbar-brand" href="../../index.html">
-          <img src="../../images/logo.png" class="img-logo">
+          <img src="../../images/new_logo.png" class="img-logo">
         </a>
       </div>
       <ul class="nav-links"> <!-- ul: unordered list -->
@@ -36,12 +36,18 @@
         <li>
           <a href="../publications.html">Publications</a>
           <ul class="Style1">
-            <li><a href="../publications.html#section1">Journals</a></li>
-            <li><a href="../publications.html#section2">Conferences</a></li>
+            <li><a href="../publications.html#section1">Conferences</a></li>
+            <li><a href="../publications.html#section2">Journals</a></li>
             <li><a href="../publications.html#section3">Patents</a></li>
           </ul>
         </li>
-        <li><a href="../courses.html">Courses</a></li>
+        <li>
+          <a href="../research.html">Research</a>
+          <ul class="Style1">
+            <li><a href="../research.html#section1">Topics</a></li>
+            <li><a href="../research.html#section2">Projects</a></li>
+          </ul>
+        </li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
       <div class="burger">
@@ -73,7 +79,7 @@
             <span><b>M.S. student</b>, Artificial Intelligence, Kyung Hee University</span>
             <span><b>Email: </b><a href="mailto:dragoon0905@khu.ac.kr"><u>dragoon0905@khu.ac.kr</u></a></span>
             <span><b>Room: </b>#325-1, College of Electronics Information</span>
-            <span><b>Research interests: </b>Unsupervised domain adaptation.</span>
+            <span><b>Research interests: </b>Unsupervised domain adaptation, Continual learning, Computer vision.</span>
           </p>
 
           <ul class="social">
@@ -81,9 +87,9 @@
             <!-- <a href="resources/CV_gmpark.pdf" class="about-cv">&nbsp C.V.</a> -->
             <!-- <a href="https://www.facebook.com/yowoou"><i class="fa fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/yowoou"><i class="fa fa-linkedin"></i></a> -->
-            <a href=# class="about-google-scholar"><i
-                class="ai ai-google-scholar"></i>&nbsp&nbsp</a>
-            <a href=# class="about-github"><i class="fa fa-github"></i></a>
+            <!-- <a href=# class="about-google-scholar"><i
+                class="ai ai-google-scholar"></i>&nbsp&nbsp</a> -->
+            <a href=# class="https://github.com/dragoon0905"><i class="fa fa-github"></i></a>
           </ul>
         </div>
       </div>
@@ -103,7 +109,6 @@
         <div class="degree">
           <span><b>Kyung Hee University</b>, Yongin, Republic of Korea</span>
           <span>B.S. in Software Convergence</span>
-          <span>Advisor: Prof. Gyeong-Moon Park</span>
         </div>
       </div>
 
@@ -111,14 +116,14 @@
         <h2>Publication</h2> <!-- Title -->
         <div class="area-divider-publication"></div>
         
-        <!-- <div class="pub_number">
-          <span>[2]</span>
+        <div class="pub_number">
+          <span>[1]</span>
         </div>
         <div class="pub_info">
-            <span><u><b>A.-H. Shin</b></u> and G.-M. Park</span>
-            <span>"AnoFormer+"</span>
-            <span><i><b>AAAI 2021</b></i>, <i>Under Review</i>.</span>
-        </div> -->
+            <span><u><b>Seun-An Choe</b></u> and G.-M. Park</span>
+            <span>"Confidence-based Pixel-wise Domain Mixing for Unsupervised Domain Adaptation"</span>
+            <span><i><b>Korea Software Congress (KSC)</b></i>, Jeju Island, Republic of Korea, Dec. 2022.</span>
+        </div>
       </div>
 
       <div class="publication">
@@ -175,6 +180,31 @@
   <footer>
     <p class="footer-bottom-text">All Rights reserved by &copy;AGILAB</p>
   </footer>
+
+  <script>
+
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('welcome')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
 </body>
 
 </html>

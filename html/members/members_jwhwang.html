@@ -15,11 +15,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header id="header">
+    <nav class="welcome">
       <div class="logo">
         <a class="navbar-brand" href="../../index.html">
-          <img src="../../images/logo.png" class="img-logo">
+          <img src="../../images/new_logo.png" class="img-logo">
         </a>
       </div>
       <ul class="nav-links"> <!-- ul: unordered list -->
@@ -36,12 +36,18 @@
         <li>
           <a href="../publications.html">Publications</a>
           <ul class="Style1">
-            <li><a href="../publications.html#section1">Journals</a></li>
-            <li><a href="../publications.html#section2">Conferences</a></li>
+            <li><a href="../publications.html#section1">Conferences</a></li>
+            <li><a href="../publications.html#section2">Journals</a></li>
             <li><a href="../publications.html#section3">Patents</a></li>
           </ul>
         </li>
-        <li><a href="../courses.html">Courses</a></li>
+        <li>
+          <a href="../research.html">Research</a>
+          <ul class="Style1">
+            <li><a href="../research.html#section1">Topics</a></li>
+            <li><a href="../research.html#section2">Projects</a></li>
+          </ul>
+        </li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
       <div class="burger">
@@ -141,6 +147,31 @@
   <footer>
     <p class="footer-bottom-text">All Rights reserved by &copy;AGILAB</p>
   </footer>
+
+  <script>
+
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('welcome')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
 </body>
 
 </html>

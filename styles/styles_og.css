@@ -19,6 +19,14 @@ nav {
     height: 60px;
     z-index: 1;
 }
+/* header.collapsed {
+    position:static;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+} */
+
 header{
     position:fixed;
     top: 0;
@@ -110,6 +118,7 @@ a {
     line-height: 2em;
     overflow: hidden;
     max-height:0;
+    width: 100%;
     padding-top: 7px;
     transition: max-height 0.15s ease-in;
     right: 0%;

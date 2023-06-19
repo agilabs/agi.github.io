@@ -15,11 +15,11 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header id="header">
+    <nav class="welcome">
       <div class="logo">
         <a class="navbar-brand" href="../../index.html">
-          <img src="../../images/logo.png" class="img-logo">
+          <img src="../../images/new_logo.png" class="img-logo">
         </a>
       </div>
       <ul class="nav-links"> <!-- ul: unordered list -->
@@ -36,12 +36,18 @@
         <li>
           <a href="../publications.html">Publications</a>
           <ul class="Style1">
-            <li><a href="../publications.html#section1">Journals</a></li>
-            <li><a href="../publications.html#section2">Conferences</a></li>
+            <li><a href="../publications.html#section1">Conferences</a></li>
+            <li><a href="../publications.html#section2">Journals</a></li>
             <li><a href="../publications.html#section3">Patents</a></li>
           </ul>
         </li>
-        <li><a href="../courses.html">Courses</a></li>
+        <li>
+          <a href="../research.html">Research</a>
+          <ul class="Style1">
+            <li><a href="../research.html#section1">Topics</a></li>
+            <li><a href="../research.html#section2">Projects</a></li>
+          </ul>
+        </li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
       <div class="burger">
@@ -72,7 +78,7 @@
             <span><b>M.S. student</b>, Computer Science and Engineering, Kyung Hee University</span>
             <span><b>Email: </b><a href="mailto:sunghoonlee961@khu.ac.kr"><u>sunghoonlee961@khu.ac.kr</u></a></span>
             <span><b>Room: </b>#107-2, College of Electronics Information</span>
-            <span><b>Research interests: </b>Class Incremental Learning, Continual Learning.</span>
+            <span><b>Research interests: </b>Continual learning, Class-incremental learning, Prompt-tuning, Parameter-efficient tuning.</span>
           </p>
 
           <ul class="social">
@@ -80,8 +86,8 @@
             <!-- <a href="resources/CV_gmpark.pdf" class="about-cv">&nbsp C.V.</a> -->
             <!-- <a href="https://www.facebook.com/yowoou"><i class="fa fa-facebook"></i></a>
               <a href="https://www.linkedin.com/in/yowoou"><i class="fa fa-linkedin"></i></a> -->
-            <a href=# class="about-google-scholar"><i
-                class="ai ai-google-scholar"></i>&nbsp&nbsp</a>
+            <!-- <a href=# class="about-google-scholar"><i
+                class="ai ai-google-scholar"></i>&nbsp&nbsp</a> -->
             <a href="https://github.com/Ethan-Lee-Sunghoon" class="about-github"><i class="fa fa-github"></i></a>
           </ul>
         </div>
@@ -121,6 +127,39 @@
         <h2>Research Project</h2> <!-- Title -->
         <div class="area-divider-research_project"></div>
 
+        <div class="pub_number">
+          <span>[4]</span>
+        </div>
+        <div class="pub_info">
+            <span>Artificial Intelligence Convergence Innovation Human Resources Development (Kyung Hee University) for Effective Early Diagnosis of Arrhythmia <b>(2022 - 2025)</b></span>
+            <span><b>Supervision:</b> Institute of Information & Communications Technology Planning & Evaluation (IITP)</span>
+            <span><b>Role</b>: Participating Researcher</span>
+        </div>
+        <div class="pub_number">
+          <span>[3]</span>
+        </div>
+        <div class="pub_info">
+            <span>Research Proposal in the Field of Artificial General Intelligence for ETRI Open Research Promotion <b>(2022)</b></span>
+            <span><b>Supervision:</b> ETRI</span>
+            <span><b>Role</b>: Participating Researcher</span>
+        </div>
+        <div class="pub_number">
+          <span>[2]</span>
+        </div>
+        <div class="pub_info">
+            <span>Artificial Intelligence Innovation Hub <b>(2021 - 2025)</b></span>
+            <span><b>Supervision:</b> Institute of Information & Communications Technology
+              Planning & Evaluation (IITP)</span>
+            <span><b>Role</b>: Participating Researcher</span>
+        </div>
+        <div class="pub_number">
+          <span>[1]</span>
+        </div>
+        <div class="pub_info">
+            <span>Patient-specific General Intelligence for Effective Early Diagnosis of Arrhythmia <b>(2021 - 2024)</b></span>
+            <span><b>Supervision:</b> Institute of Information & Communications Technology Planning & Evaluation (IITP)</span>
+            <span><b>Role</b>: Participating Researcher</span>
+        </div>
       </div>
 
       <div class="activity">
@@ -146,6 +185,20 @@
           <span><b>Academic Services</b></span>
           <span><b>Awards</b></span>
           <span><b>Skills</b></span>
+          <div class="pub_number">
+            <span>[1]</span>
+          </div>
+          <div class="pub_info">
+              <span><b>Languages</b></span>
+              <span>Korean (native)</span>
+              <span>English</span>
+          </div>
+          <div class="pub_number">
+            <span>[2]</span>
+          </div>
+          <div class="pub_info">
+              <span><b>Programming Skills</b></span>
+              <span>Python (Pytorch)</span>
         </div>
       </div>
     </div>
@@ -154,6 +207,31 @@
   <footer>
     <p class="footer-bottom-text">All Rights reserved by &copy;AGILAB</p>
   </footer>
+
+  <script>
+
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('welcome')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
 </body>
 
 </html>
