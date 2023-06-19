@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/academicons.css" />
-  <link rel="stylesheet" href="styles/styles4.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <nav>
       <div class="logo">
         <a class="navbar-brand" href="index.html">
@@ -36,12 +36,18 @@
         <li>
           <a href="html/publications.html">Publications</a>
           <ul class="Style1">
-            <li><a href="html/publications.html#section1">Journals</a></li>
-            <li><a href="html/publications.html#section2">Conferences</a></li>
+            <li><a href="html/publications.html#section1">Conferences</a></li>
+            <li><a href="html/publications.html#section2">Journals</a></li>
             <li><a href="html/publications.html#section3">Patents</a></li>
           </ul>
         </li>
-        <li><a href="html/courses.html">Courses</a></li>
+        <li>
+          <a href="html/research.html">Research</a>
+          <ul class="Style1">
+            <li><a href="html/research.html#section1">Topics</a></li>
+            <li><a href="html/research.html#section2">Projects</a></li>
+          </ul>
+        </li>
         <li><a href="html/contact.html">Contact</a></li>
       </ul>
       <div class="burger">
@@ -52,6 +58,7 @@
     </nav>
     <script src="app.js"></script>
   </header>
+
   <div class="banner-area">
     <h1><span>Artificial General Intelligence Lab.</span></h1> <!-- span: shadow effect -->
   </div>
@@ -91,7 +98,7 @@
         </p>
       </div>
 
-      <div class="research-area">
+      <!-- <div class="research-area">
         <div class="research">
           <div class="pics" style="background-image: url('images/intro1.PNG');"></div>
         </div>
@@ -101,7 +108,7 @@
         <div class="research">
           <div class="pics" style="background-image: url('images/intro3.PNG');"></div>
         </div>
-      </div>
+      </div> -->
     
     </div> <!-- Welcome-end -->
 
@@ -127,6 +134,51 @@
       <div class="area-divider-news"></div>
 
       <div class="date">
+        <p>[2023-03-02]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>New M.S. members "Jae-Ho Lee", "Juwon Seo", and "Jun-Yeong Moon" join our lab. Welcome!</span>
+          </p>
+      </div>
+
+      <div class="date">
+        <p>[2023-02-28]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>Our paper titled "LINe: Out-of-Distribution Detection by Leveraging Important Neurons" got accepted to <b><i>CVPR 2023</i></b>.</span>
+          </p>
+      </div>
+
+      <div class="date">
+        <p>[2023-02-02]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>We got the <u><a href="./../../images/award/award_230202_jhlee.pdf">award</a></u> in KSC 2022 from the paper titled "Prompt Based Incremental Learning Using Attention Diversity". Congratulations!</span>
+          </p>
+      </div>
+
+      <div class="date">
+        <p>[2023-02-02]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>We got the <u><a href="./../../images/award/award_230202_jwseo.pdf">award</a></u> in KSC 2022 from the paper titled "Few-Shot Image Generation via Learning Disentangled Feature". Congratulations!</span>
+          </p>
+      </div>
+
+      <div class="date">
+        <p>[2023-02-02]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>We got the <u><a href="./../../images/award/award_230202_khpark_mypark.pdf">award</a></u> in KSC 2022 from the paper titled "Dynamic and Assistant Prompts for Class Incremental Learning". Congratulations!</span>
+          </p>
+      </div>
+
+      <div class="date">
         <p>[2022-09-01]</p>
       </div>
       <div class="news">
@@ -140,7 +192,7 @@
       </div>
       <div class="news">
           <p>
-            <span>We got the <u><a href="./../../images/award/award_mgcho.pdf">award</a></u> in KCC 2022 from the paper titled "Lifelong Language Learning Using Pretrained Adapters". Congratulations!</span>
+            <span>We got the <u><a href="./../../images/award/award_220722_mgcho.pdf">award</a></u> in KCC 2022 from the paper titled "Lifelong Language Learning Using Pretrained Adapters". Congratulations!</span>
           </p>
       </div>
 
@@ -167,7 +219,7 @@
       </div>
       <div class="news">
           <p>
-            <span>We got the <u><a href="./../../images/award/award_jhlee.pdf">award</a></u> in KSC 2021 from the paper titled "Vision Transformer Based Continual Learning". Congratulations!</span>
+            <span>We got the <u><a href="./../../images/award/award_220203_jhlee.pdf">award</a></u> in KSC 2021 from the paper titled "Vision Transformer Based Continual Learning". Congratulations!</span>
           </p>
       </div>
 
@@ -204,7 +256,7 @@
       </div>
       <div class="news">
           <p>
-            <span>We got the <u><a href="./../../images/award/award_ahshin.pdf">award</a></u> in KCC 2021 from the paper titled "AnoFormer: Anomalous Rhythm Detection wth Transformer-based GAN". Congratulations!</i></span>
+            <span>We got the <u><a href="./../../images/award/award_210723_ahshin.pdf">award</a></u> in KCC 2021 from the paper titled "AnoFormer: Anomalous Rhythm Detection wth Transformer-based GAN". Congratulations!</i></span>
           </p>
       </div>
 
@@ -242,6 +294,31 @@
   <footer>
     <p class="footer-bottom-text">All Rights reserved by &copy;AGILAB</p>
   </footer>
+  
+  <script>
+
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('banner-area')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
 </body>
 
 </html>
