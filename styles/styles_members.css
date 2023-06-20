@@ -122,7 +122,7 @@ a {
     overflow: hidden;
     max-height:0;
     width: 100%;
-    padding-top: 7px;
+    padding-top: 2px;
     transition: max-height 0.15s ease-in;
     right: 0%;
     text-align: center;
@@ -131,14 +131,14 @@ a {
 
 .nav-links .Style1 a {
     display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     /* background: white; */
     color: white;
     text-align: center;
     margin: 0 auto;
     width: 100%;
-    line-height: 160%;
+    line-height: 150%;
     /* box-shadow: 3px 3px 3px gray; */
 
 }
@@ -316,13 +316,6 @@ html {
     padding: 0px 10px 0px 10px;
 }
 
-.welcome.with-fixed-header {
-    background-color: rgba(11, 25, 67, 1);
-}
-
-.welcome.with-fixed-header li{
-    background-color: rgba(11, 25, 67, 1);
-}
 
 .anchor-top {
     display: block;
@@ -384,6 +377,7 @@ html {
 
 .member_column{
     flex-basis: 25%;
+    width: 282px;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
