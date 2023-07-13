@@ -140,15 +140,13 @@
     <div class="area-main">
       <div class="area-name">SELECTED PUBLICATIONS</div>
       <div class="area-divider-publication"></div>
-      <div class="outer-button">
-        <div class="button-list-left">
-          <button class="button-left">
-            <img src="images/left-arrow.png">
-          </button>
-        </div>
-        <div class="outer">
-          <div class="inner-list">
-            <div class="inner">
+      <div class="outer">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <ul class="slidelist">
+          <li class="slideitem">
+            <a>
+              <label for="slide02" class="prev"></label>
               <div class="inner_column">
                 <div class="inner_pic" style="background-image: url('../images/inner2_1.jpg');"></div>
               </div>
@@ -160,31 +158,25 @@
                   <span><u><a href="https://arxiv.org/abs/2209.10811">Paper Link</a></u></span>
                 </p>
               </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner1_1.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>LINe: Out-of-Distribution Detection by Leveraging Important Neurons</b></span>
-                  <span>Y.H. Ahn, <u><b>G.-M. Park</b></u>*, and S.T. Kim* (<b>Co-corresponding</b>)</span>
-                  <span><b>CVPR 2023</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2303.13995">Paper Link</a></u> | <u><a href="https://github.com/YongHyun-Ahn/LINe-Out-of-Distribution-Detection-by-Leveraging-Important-Neurons">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="button-list-right">
-          <button class="button-right">
-            <img src="images/right-arrow.png">
-          </button>
-        </div>
+              <label for="slide02" class="next"></label>
+            </a>
+          </li>
+          <li class="slideitem">
+            <a>
+              <label for="slide01" class="prev"></label>
+              <span><b>LINe: Out-of-Distribution Detection by Leveraging Important Neurons</b></span>
+              <label for="slide01" class="next"></label>
+            </a>
+          </li>
+          <!-- <li class="slideitem">
+            <a>
+              <label for="slide02" class="prev"></label>
+              <img src="./img/slide03.jpg">
+              <label for="slide01" class="next"></label>
+            </a>
+          </li> -->
+        </ul>
       </div>
-
-      
-
     </div>
 
     <div class="area-main">
@@ -396,56 +388,7 @@
     })
   
   </script>
-  <script>
-    /*
-      div사이즈 동적으로 구하기
-    */
-    const outer = document.querySelector('.outer');
-    const innerList = document.querySelector('.inner-list');
-    const inners = document.querySelectorAll('.inner');
-    let currentIndex = 0; // 현재 슬라이드 화면 인덱스
 
-    inners.forEach((inner) => {
-      inner.style.width = `${outer.clientWidth}px`; // inner의 width를 모두 outer의 width로 만들기
-    })
-
-    innerList.style.width = `${outer.clientWidth * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기
-
-    /*
-      버튼에 이벤트 등록하기
-    */
-    const buttonLeft = document.querySelector('.button-left');
-    const buttonRight = document.querySelector('.button-right');
-
-    buttonLeft.addEventListener('click', () => {
-      currentIndex--;
-      currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-    });
-
-    buttonRight.addEventListener('click', () => {
-      currentIndex++;
-      currentIndex = currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-    });
-
-    /*
-      주기적으로 화면 넘기기
-    */
-    const getInterval = () => {
-      return setInterval(() => {
-        currentIndex++;
-        currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
-        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
-      }, 6000);
-    }
-
-    let interval = getInterval(); // interval 등록
-  </script>
 </body>
 
 </html>
