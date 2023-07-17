@@ -452,10 +452,10 @@
     let currentIndex = 0; // 현재 슬라이드 화면 인덱스
 
     inners.forEach((inner) => {
-      inner.style.width = `${outerButton.clientWidth-6}px`; // inner의 width를 모두 outer의 width로 만들기
+      inner.style.width = `${outerButton.clientWidth-6}px`; // inner의 width를 모두 outer-button 의 width로 만들기 (-6은 테두리 두께 빼기)
     })
 
-    innerList.style.width = `${(outerButton.clientWidth-6) * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기
+    innerList.style.width = `${(outerButton.clientWidth-6) * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기 (-6은 테두리 두께 빼기)
 
     /*
       버튼에 이벤트 등록하기
@@ -482,7 +482,7 @@
     /*
       주기적으로 화면 넘기기
     */
-    /*const getInterval = () => {
+    const getInterval = () => {
       return setInterval(() => {
         currentIndex++;
         currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
@@ -490,7 +490,7 @@
       }, 6000);
     }
 
-    let interval = getInterval();*/
+    let interval = getInterval();
      // interval 등록
   </script>
 </body>
