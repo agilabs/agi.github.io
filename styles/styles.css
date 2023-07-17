@@ -422,9 +422,9 @@ html {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-around left;
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 .inner .inner_column {
