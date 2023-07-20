@@ -186,7 +186,7 @@ a {
 }
 
 .area-btn {
-    padding-top: 50px;
+    padding-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
     /* padding-bottom: 20px; */
@@ -209,6 +209,10 @@ a {
     height: 50px; 
     margin-top: -44px; 
     visibility: hidden;
+}
+
+.section1{
+    height: 0px;
 }
 
 

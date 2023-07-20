@@ -520,9 +520,61 @@ button {
     transition-duration:0.4s;
 }
 
+.button-list-num {
+    text-align: center;
+    margin-top:-40px;
+    padding-bottom: 10px;
+
+}
+
+.button-num1 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+}
+
+.button-num2 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+    
+}
+
+.button-num3 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+}
+
+.button-num4 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+}
+
 button:hover{
     background: royalblue;
-    color: gray;
+    /* color: gray; */
 
 }
 
