@@ -524,122 +524,53 @@
       button4.style.backgroundColor = currentIndex % 4 === 3 ? "royalblue" : "lightgray";
     }
 
-    button1.addEventListener('click',() => {
-      currentIndex = 0;
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-      button1.style.backgroundColor = "royalblue";
-      button2.style.backgroundColor = "lightgray";
-      button3.style.backgroundColor = "lightgray";
-      button4.style.backgroundColor = "lightgray";
+    const buttons = [button1, button2, button3, button4];
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        currentIndex = index;
+        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+        clearInterval(interval);
+        interval = getInterval();
+        updateButtonBackground();
+      });
     });
 
-    button2.addEventListener('click',() => {
-      currentIndex = 1;
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-      button1.style.backgroundColor = "lightgray";
-      button2.style.backgroundColor = "royalblue";
-      button3.style.backgroundColor = "lightgray";
-      button4.style.backgroundColor = "lightgray";
-    });
-
-    button3.addEventListener('click',() => {
-      currentIndex = 2;
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-      button1.style.backgroundColor = "lightgray";
-      button2.style.backgroundColor = "lightgray";
-      button3.style.backgroundColor = "royalblue";
-      button4.style.backgroundColor = "lightgray";
-    });
-
-    button4.addEventListener('click',() => {
-      currentIndex = 3;
-      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
-      clearInterval(interval); // 기존 동작되던 interval 제거
-      interval = getInterval(); // 새로운 interval 등록
-      button1.style.backgroundColor = "lightgray";
-      button2.style.backgroundColor = "lightgray";
-      button3.style.backgroundColor = "lightgray";
-      button4.style.backgroundColor = "royalblue";
-    });
-
+    function updateButtonBackground() {
+      buttons.forEach((button, index) => {
+        button.style.backgroundColor = currentIndex === index ? "royalblue" : "lightgray";
+      });
+    }
 
     /*
       주기적으로 화면 넘기기
     */
+
     const getInterval = () => {
       return setInterval(() => {
         currentIndex++;
         currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
         innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
-        if (currentIndex%4==0){
-          button1.style.backgroundColor = "royalblue";
-        }else{
-          button1.style.backgroundColor = "lightgray";
-        }
-        if (currentIndex%4==1){
-          button2.style.backgroundColor = "royalblue";
-        }else{
-          button2.style.backgroundColor = "lightgray";
-        }
-        if (currentIndex%4==2){
-          button3.style.backgroundColor = "royalblue";
-        }else{
-          button3.style.backgroundColor = "lightgray";
-        }
-        if (currentIndex%4==3){
-          button4.style.backgroundColor = "royalblue";
-        }else{
-          button4.style.backgroundColor = "lightgray";
-        }
+    
+        const buttons = [button1, button2, button3, button4];
+        buttons.forEach((button, index) => {
+          button.style.backgroundColor = currentIndex % 4 === index ? "royalblue" : "lightgray";
+        });
       }, 5000);
-      
-    }
+    };
 
     // Add event listeners for hover effect on buttons
-    button1.addEventListener('mouseenter', () => {
-      button1.style.backgroundColor = "royalblue";
-    });
 
-    button1.addEventListener('mouseleave', () => {
-      if (currentIndex % 4 !== 0) {
-        button1.style.backgroundColor = "lightgray";
-      }
-    });
-
-    button2.addEventListener('mouseenter', () => {
-      button2.style.backgroundColor = "royalblue";
-    });
-
-    button2.addEventListener('mouseleave', () => {
-      if (currentIndex % 4 !== 1) {
-        button2.style.backgroundColor = "lightgray";
-      }
-    });
-
-    button3.addEventListener('mouseenter', () => {
-      button3.style.backgroundColor = "royalblue";
-    });
-
-    button3.addEventListener('mouseleave', () => {
-      if (currentIndex % 4 !== 2) {
-        button3.style.backgroundColor = "lightgray";
-      }
-    });
-
-    button4.addEventListener('mouseenter', () => {
-      button4.style.backgroundColor = "royalblue";
-    });
-
-    button4.addEventListener('mouseleave', () => {
-      if (currentIndex % 4 !== 3) {
-        button4.style.backgroundColor = "lightgray";
-      }
+    buttons.forEach((button, index) => {
+      button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = "royalblue";
+      });
+    
+      button.addEventListener('mouseleave', () => {
+        if (currentIndex % 4 !== index) {
+          button.style.backgroundColor = "lightgray";
+        }
+      });
     });
 
     let interval = getInterval();
