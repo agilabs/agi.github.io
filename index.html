@@ -168,7 +168,7 @@
               <div class="inner_desc">
                 <p>
                   <span><b>LFS-GAN: Lifelong Few-Shot Image Generation</b></span>
-                  <span>J.-W. Seo, J.-S. Kang, and <u><b>G.-M. Park</b></u></span>
+                  <span>J. Seo, J.-S. Kang, and <u><b>G.-M. Park</b></u></span>
                   <span><b>ICCV 2023</b></span>
                   <span><u><a href="">Paper Link (TBU)</a></u></span>
                 </p>
@@ -246,7 +246,7 @@
         </div>
         <div class="news">
             <p>
-              <span>New M.S. members "Keonhee Park", "Seon-An Choe", "Min-Yeong Park", and "Taeyeong Lee" join our lab. Welcome!</span>
+              <span>New M.S. members "Keon-Hee Park", "Seon-An Choe", "Min-Yeong Park", and "Tae-Yeong Lee" join our lab. Welcome!</span>
             </p>
         </div> -->
 
@@ -282,7 +282,7 @@
         </div>
         <div class="news">
             <p>
-              <span>New M.S. members "Jae-Ho Lee", "Ju-Won Seo", and "Jun-Yeong Moon" join our lab. Welcome!</span>
+              <span>New M.S. members "Jae-Ho Lee", "Juwon Seo", and "Jun-Yeong Moon" join our lab. Welcome!</span>
             </p>
         </div>
 
@@ -494,59 +494,35 @@
 
     buttonLeft.addEventListener('click', () => {
       currentIndex--;
-      currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
+      if (currentIndex < 0) {
+        currentIndex = inners.length - 1; // Wrap around to the last index if currentIndex is less than 0
+      }
+      //currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
       innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
       clearInterval(interval); // 기존 동작되던 interval 제거
       interval = getInterval(); // 새로운 interval 등록
-      if (currentIndex%4==0){
-        button1.style.backgroundColor = "royalblue";
-      }else{
-        button1.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==1){
-        button2.style.backgroundColor = "royalblue";
-      }else{
-        button2.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==2){
-        button3.style.backgroundColor = "royalblue";
-      }else{
-        button3.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==3){
-        button4.style.backgroundColor = "royalblue";
-      }else{
-        button4.style.backgroundColor = "lightgray";
-      }
+      updateButtonBackground();
     });
 
     buttonRight.addEventListener('click', () => {
       currentIndex++;
-      currentIndex = currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
+      if (currentIndex >= inners.length) {
+        currentIndex = 0; // Wrap around to the first index if currentIndex is greater than or equal to inners.length
+      }
+      //currentIndex = currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
       innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
       clearInterval(interval); // 기존 동작되던 interval 제거
       interval = getInterval(); // 새로운 interval 등록
-      if (currentIndex%4==0){
-        button1.style.backgroundColor = "royalblue";
-      }else{
-        button1.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==1){
-        button2.style.backgroundColor = "royalblue";
-      }else{
-        button2.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==2){
-        button3.style.backgroundColor = "royalblue";
-      }else{
-        button3.style.backgroundColor = "lightgray";
-      }
-      if (currentIndex%4==3){
-        button4.style.backgroundColor = "royalblue";
-      }else{
-        button4.style.backgroundColor = "lightgray";
-      }
+      updateButtonBackground();
     });
+
+    function updateButtonBackground() {
+      // Update button backgrounds based on currentIndex
+      button1.style.backgroundColor = currentIndex % 4 === 0 ? "royalblue" : "lightgray";
+      button2.style.backgroundColor = currentIndex % 4 === 1 ? "royalblue" : "lightgray";
+      button3.style.backgroundColor = currentIndex % 4 === 2 ? "royalblue" : "lightgray";
+      button4.style.backgroundColor = currentIndex % 4 === 3 ? "royalblue" : "lightgray";
+    }
 
     button1.addEventListener('click',() => {
       currentIndex = 0;
@@ -625,6 +601,46 @@
       
     }
 
+    // Add event listeners for hover effect on buttons
+    button1.addEventListener('mouseenter', () => {
+      button1.style.backgroundColor = "royalblue";
+    });
+
+    button1.addEventListener('mouseleave', () => {
+      if (currentIndex % 4 !== 0) {
+        button1.style.backgroundColor = "lightgray";
+      }
+    });
+
+    button2.addEventListener('mouseenter', () => {
+      button2.style.backgroundColor = "royalblue";
+    });
+
+    button2.addEventListener('mouseleave', () => {
+      if (currentIndex % 4 !== 1) {
+        button2.style.backgroundColor = "lightgray";
+      }
+    });
+
+    button3.addEventListener('mouseenter', () => {
+      button3.style.backgroundColor = "royalblue";
+    });
+
+    button3.addEventListener('mouseleave', () => {
+      if (currentIndex % 4 !== 2) {
+        button3.style.backgroundColor = "lightgray";
+      }
+    });
+
+    button4.addEventListener('mouseenter', () => {
+      button4.style.backgroundColor = "royalblue";
+    });
+
+    button4.addEventListener('mouseleave', () => {
+      if (currentIndex % 4 !== 3) {
+        button4.style.backgroundColor = "lightgray";
+      }
+    });
 
     let interval = getInterval();
      // interval 등록
