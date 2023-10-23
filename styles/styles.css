@@ -316,7 +316,7 @@ html {
 
 .area-divider-welcome {
     display: block;
-    width: 145px;
+    width:217px;
     height: 5px;
     margin-bottom: 0px;
     background-color: rgb(211, 211, 211);
@@ -352,9 +352,17 @@ html {
     font-size: 26px;
     font-weight: bold;
     color: royalblue;
-
     padding-top: 30px;
 }
+
+.area-name a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    padding-top: 30px;
+}
+
 
 .area-content span {
     display: block;
