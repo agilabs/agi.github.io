@@ -603,13 +603,11 @@ button {
 button:hover{
     background: royalblue;
     /* color: gray; */
-
 }
 
 button img {
     width: 100%;
     /* height: 50px; */
-
 }
 
 .research-area {
