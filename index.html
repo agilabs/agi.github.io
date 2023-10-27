@@ -138,9 +138,10 @@
               <div class="inner_desc">
                 <p>
                   <span><b>RADIO: Reference-Agnostic Dubbing Video Synthesis</b></span>
-                  <span><span>Chaewon Kim*, Dongyeun Lee*, Sangjoon Yu, Jaejun Yoo<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><span>Dongyeun Lee*, Chaewon Kim*, Sangjoon Yu, Jaejun Yoo<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
                   <span><b>WACV 2024</b></span>
-                  <!-- <span><u><a href="">Paper Link</a></u> | <u><a href="">Code Link</a></u></span> -->
+                  <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span>
+                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
                 </p>
               </div>
             </div>
@@ -153,7 +154,7 @@
                   <span><b>GLAD: Global-Local View Alignment and Background Debiasing for Video Domain Adaptation</b></span>
                   <span>Hyogun Lee*, Kyungho Bae*, Yumin Ko, Seong Jong Ha, <u><b>G.-M. Park</b></u><sup>†</sup>, and Jinwoo Choi<sup>†</sup></span>
                   <span><b>WACV 2024</b></span>
-                  <!-- <span><u><a href="">Paper Link</a></u> | <u><a href="">Code Link</a></u></span> -->
+                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
                 </p>
               </div>
             </div>
@@ -640,9 +641,9 @@
         currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
         innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
     
-        const buttons = [button1, button2, button3, button4];
+        const buttons = [button1, button2, button3, button4, button5, button6];
         buttons.forEach((button, index) => {
-          button.style.backgroundColor = currentIndex % 4 === index ? "royalblue" : "lightgray";
+          button.style.backgroundColor = currentIndex % 6 === index ? "royalblue" : "lightgray";
         });
       }, 5000);
     };
