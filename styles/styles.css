@@ -578,6 +578,28 @@ button {
     margin: 10px 5px 0px 5px;
 }
 
+.button-num5 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+}
+
+.button-num6 {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    border: transparent;
+    background-color: lightgray;
+    -webkit-transition-duration:0.4s;
+    transition-duration:0.4s;
+    margin: 10px 5px 0px 5px;
+}
+
 button:hover{
     background: royalblue;
     /* color: gray; */
