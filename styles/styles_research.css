@@ -373,11 +373,12 @@ html {
     display: -o-flex;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around left;
+    justify-content: flex-start;
+    margin-bottom: 20px;
 }
 
 .topic_column{
-    flex-basis: 25%;
+    flex-basis: 30%;
     padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -392,6 +393,7 @@ html {
 .topic .topic_desc {
     /* display: flex;
     align-items: center; */
+    flex-basis: 60%;
     padding-left: 40px;
     margin-left: 40px;
 }
@@ -430,9 +432,33 @@ html {
     margin-bottom: 15px;
 }
 
+.keywords {
+    margin-top: 20px;
+}
+
+.keywords li {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.keywords > div {
+    padding: 2px 6px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ececec;
+    color: #000000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+
 @media (max-width: 846px) {
     .topic_column{
-        flex-basis: 33%;
+        flex-basis: 100%;
         padding-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;
@@ -446,7 +472,7 @@ html {
 
 @media (max-width: 638px) {
     .topic_column{
-        flex-basis: 50%;
+        flex-basis: 100%;
         padding-bottom: 20px;
         padding-left: 10px;
         padding-right: 10px;

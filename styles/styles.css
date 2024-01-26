@@ -622,6 +622,7 @@ button img {
     margin-right: auto;
     /* justify-content: space-around left;
     justify-content: center; */
+    justify-content: center;
 }
 
 .research {
@@ -700,7 +701,11 @@ button img {
 
 @media (max-width: 1000px) {
     .research{
-        flex-basis: 100%;
+        flex-basis: 50%;
         padding-bottom: 20px;
+    }
+
+    .research h2 {
+        font-size: 20px;
     }
 }
