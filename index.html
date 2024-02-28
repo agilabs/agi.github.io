@@ -262,18 +262,15 @@
         </div>
       </div>
       <div class="button-list-num">
-        <button class="button-num1">
-        </button>
-        <button class="button-num2">
-        </button>
-        <button class="button-num3">
-        </button>
-        <button class="button-num4">
-        </button>
-        <button class="button-num5">
-        </button>
-        <button class="button-num6">
-        </button>
+        <button class="button-num1"></button>
+        <button class="button-num2"></button>
+        <button class="button-num3"></button>
+        <button class="button-num4"></button>
+        <button class="button-num5"></button>
+        <button class="button-num6"></button>
+        <button class="button-num7"></button>
+        <button class="button-num8"></button>
+        <button class="button-num9"></button>
       </div>
     </div>
 
@@ -635,7 +632,9 @@
     const button4 = document.querySelector('.button-num4');
     const button5 = document.querySelector('.button-num5');
     const button6 = document.querySelector('.button-num6');
-    
+    const button7 = document.querySelector('.button-num7');
+    const button8 = document.querySelector('.button-num8');
+    const button9 = document.querySelector('.button-num9');
     button1.style.backgroundColor = "royalblue";
 
     buttonLeft.addEventListener('click', () => {
@@ -664,15 +663,19 @@
 
     function updateButtonBackground() {
       // Update button backgrounds based on currentIndex
-      button1.style.backgroundColor = currentIndex % 6 === 0 ? "royalblue" : "lightgray";
-      button2.style.backgroundColor = currentIndex % 6 === 1 ? "royalblue" : "lightgray";
-      button3.style.backgroundColor = currentIndex % 6 === 2 ? "royalblue" : "lightgray";
-      button4.style.backgroundColor = currentIndex % 6 === 3 ? "royalblue" : "lightgray";
-      button5.style.backgroundColor = currentIndex % 6 === 4 ? "royalblue" : "lightgray";
-      button6.style.backgroundColor = currentIndex % 6 === 5 ? "royalblue" : "lightgray";
+      num = 9
+      button1.style.backgroundColor = currentIndex % num === 0 ? "royalblue" : "lightgray";
+      button2.style.backgroundColor = currentIndex % num === 1 ? "royalblue" : "lightgray";
+      button3.style.backgroundColor = currentIndex % num === 2 ? "royalblue" : "lightgray";
+      button4.style.backgroundColor = currentIndex % num === 3 ? "royalblue" : "lightgray";
+      button5.style.backgroundColor = currentIndex % num === 4 ? "royalblue" : "lightgray";
+      button6.style.backgroundColor = currentIndex % num === 5 ? "royalblue" : "lightgray";
+      button7.style.backgroundColor = currentIndex % num === 6 ? "royalblue" : "lightgray";
+      button8.style.backgroundColor = currentIndex % num === 7 ? "royalblue" : "lightgray";
+      button9.style.backgroundColor = currentIndex % num === 8 ? "royalblue" : "lightgray";
     }
 
-    const buttons = [button1, button2, button3, button4, button5, button6];
+    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9];
 
     buttons.forEach((button, index) => {
       button.addEventListener('click', () => {
