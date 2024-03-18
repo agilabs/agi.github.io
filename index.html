@@ -649,7 +649,28 @@
       interval = getInterval(); // 새로운 interval 등록
       updateButtonBackground();
     });
-
+    var delay = 300;
+    var timer = null;
+    window.addEventListener('resize', function(){
+      clearTimeout(timer);
+      timer = setTimeout(function(){
+        console.log('resize event!');
+        const outer = document.querySelector('.outer');
+      const outerButton = document.querySelector('.outer-button');
+      const innerList = document.querySelector('.inner-list');
+      const inners = document.querySelectorAll('.inner');
+      let currentIndex = 0; // 현재 슬라이드 화면 인덱스
+  
+      inners.forEach((inner) => {
+        inner.style.width = `${outerButton.clientWidth-6}px`; // inner의 width를 모두 outer-button 의 width로 만들기 (-6은 테두리 두께 빼기)
+      })
+  
+      innerList.style.width = `${(outerButton.clientWidth-6) * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기 (-6은 테두리 두께 빼기)
+  
+      }, delay);
+      });
+      console.log('resize event!');
+      
     buttonRight.addEventListener('click', () => {
       currentIndex++;
       if (currentIndex >= inners.length) {
