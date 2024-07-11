@@ -319,6 +319,7 @@
         <button class="button-num9"></button>
         <button class="button-num10"></button>
         <button class="button-num11"></button>
+        <button class="button-num12"></button>
       </div>
     </div>
 
@@ -712,6 +713,7 @@
     const button9 = document.querySelector('.button-num9');
     const button10 = document.querySelector('.button-num10');
     const button11 = document.querySelector('.button-num11');
+    const button12 = document.querySelector('.button-num12');
     button1.style.backgroundColor = "royalblue";
 
     buttonLeft.addEventListener('click', () => {
@@ -771,11 +773,12 @@
       button7.style.backgroundColor = currentIndex % num === 6 ? "royalblue" : "lightgray";
       button8.style.backgroundColor = currentIndex % num === 7 ? "royalblue" : "lightgray";
       button9.style.backgroundColor = currentIndex % num === 8 ? "royalblue" : "lightgray";
-      button10.style.backgroundColor = currentIndex % num === 8 ? "royalblue" : "lightgray";
-      button11.style.backgroundColor = currentIndex % num === 8 ? "royalblue" : "lightgray";
+      button10.style.backgroundColor = currentIndex % num === 9 ? "royalblue" : "lightgray";
+      button11.style.backgroundColor = currentIndex % num === 10 ? "royalblue" : "lightgray";
+      button12.style.backgroundColor = currentIndex % num === 11 ? "royalblue" : "lightgray";
     }
 
-    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11];
+    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12];
 
     buttons.forEach((button, index) => {
       button.addEventListener('click', () => {
