@@ -772,7 +772,7 @@
 
     function updateButtonBackground() {
       // Update button backgrounds based on currentIndex
-      num = 9
+      num = 12
       button1.style.backgroundColor = currentIndex % num === 0 ? "royalblue" : "lightgray";
       button2.style.backgroundColor = currentIndex % num === 1 ? "royalblue" : "lightgray";
       button3.style.backgroundColor = currentIndex % num === 2 ? "royalblue" : "lightgray";
@@ -815,9 +815,9 @@
         currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
         innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
     
-        const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9];
+        const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12];
         buttons.forEach((button, index) => {
-          button.style.backgroundColor = currentIndex % 9 === index ? "royalblue" : "lightgray";
+          button.style.backgroundColor = currentIndex % 12 === index ? "royalblue" : "lightgray";
         });
       }, 5000);
     };
@@ -830,7 +830,7 @@
       });
     
       button.addEventListener('mouseleave', () => {
-        if (currentIndex % 9 !== index) {
+        if (currentIndex % 12 !== index) {
           button.style.backgroundColor = "lightgray";
         }
       });
