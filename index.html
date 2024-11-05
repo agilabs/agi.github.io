@@ -846,9 +846,9 @@
       button10.style.backgroundColor = currentIndex % num === 9 ? "royalblue" : "lightgray";
       button11.style.backgroundColor = currentIndex % num === 10 ? "royalblue" : "lightgray";
       button12.style.backgroundColor = currentIndex % num === 11 ? "royalblue" : "lightgray";
-      button12.style.backgroundColor = currentIndex % num === 12 ? "royalblue" : "lightgray";
-      button12.style.backgroundColor = currentIndex % num === 13 ? "royalblue" : "lightgray";
-      button12.style.backgroundColor = currentIndex % num === 14 ? "royalblue" : "lightgray";
+      button13.style.backgroundColor = currentIndex % num === 12 ? "royalblue" : "lightgray";
+      button14.style.backgroundColor = currentIndex % num === 13 ? "royalblue" : "lightgray";
+      button15.style.backgroundColor = currentIndex % num === 14 ? "royalblue" : "lightgray";
     }
 
     const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12];
@@ -881,7 +881,7 @@
     
         const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12];
         buttons.forEach((button, index) => {
-          button.style.backgroundColor = currentIndex % 12 === index ? "royalblue" : "lightgray";
+          button.style.backgroundColor = currentIndex % 15 === index ? "royalblue" : "lightgray";
         });
       }, 5000);
     };
@@ -894,7 +894,7 @@
       });
     
       button.addEventListener('mouseleave', () => {
-        if (currentIndex % 12 !== index) {
+        if (currentIndex % 15 !== index) {
           button.style.backgroundColor = "lightgray";
         }
       });
