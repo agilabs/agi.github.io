@@ -132,6 +132,20 @@
         <div class="outer">
           <div class="inner-list">
 
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/MPAW.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Multispectral Pedestrian Detection with Sparsely Annotated Label</b></span>
+                  <span>Chan Lee*, Seungho Shin*, <u><b>G.-M. Park</b></u><sup>†</sup>, Jung Uk Kim<sup>†</sup></span>
+                  <span><b>AAAI 2025</b></span>
+                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                </p>
+              </div>
+            </div>
+
 
             <div class="inner">
               <div class="inner_column">
@@ -359,7 +373,7 @@
         <button class="button-num12"></button>
         <button class="button-num13"></button>
         <button class="button-num14"></button>
-        <!-- <button class="button-num15"></button> -->
+        <button class="button-num15"></button>
       </div>
     </div>
 
@@ -792,7 +806,7 @@
     const button12 = document.querySelector('.button-num12');
     const button13 = document.querySelector('.button-num13');
     const button14 = document.querySelector('.button-num14');
-    // const button15 = document.querySelector('.button-num15');
+    const button15 = document.querySelector('.button-num15');
     button1.style.backgroundColor = "royalblue";
 
     buttonLeft.addEventListener('click', () => {
@@ -842,7 +856,7 @@
 
     function updateButtonBackground() {
       // Update button backgrounds based on currentIndex
-      num = 14
+      num = 15
       button1.style.backgroundColor = currentIndex % num === 0 ? "royalblue" : "lightgray";
       button2.style.backgroundColor = currentIndex % num === 1 ? "royalblue" : "lightgray";
       button3.style.backgroundColor = currentIndex % num === 2 ? "royalblue" : "lightgray";
@@ -857,10 +871,10 @@
       button12.style.backgroundColor = currentIndex % num === 11 ? "royalblue" : "lightgray";
       button13.style.backgroundColor = currentIndex % num === 12 ? "royalblue" : "lightgray";
       button14.style.backgroundColor = currentIndex % num === 13 ? "royalblue" : "lightgray";
-      // button15.style.backgroundColor = currentIndex % num === 14 ? "royalblue" : "lightgray";
+      button15.style.backgroundColor = currentIndex % num === 14 ? "royalblue" : "lightgray";
     }
 
-    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14];
+    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14,button15];
 
     buttons.forEach((button, index) => {
       button.addEventListener('click', () => {
@@ -888,9 +902,9 @@
         currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
         innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
     
-        const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14];
+        const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14,button15];
         buttons.forEach((button, index) => {
-          button.style.backgroundColor = currentIndex % 14 === index ? "royalblue" : "lightgray";
+          button.style.backgroundColor = currentIndex % 15 === index ? "royalblue" : "lightgray";
         });
       }, 5000);
     };
@@ -903,7 +917,7 @@
       });
     
       button.addEventListener('mouseleave', () => {
-        if (currentIndex % 14 !== index) {
+        if (currentIndex % 15 !== index) {
           button.style.backgroundColor = "lightgray";
         }
       });
